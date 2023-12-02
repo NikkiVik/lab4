@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="container">
+    <header style="grid-area: header;">
+        <h1>Головна</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="survey.html">Відгуки</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Пошук">
+            <div class="search-icon">&#128269;</div>
+        </div>
+    </header>
+    <div class="image-container">
+        <div class="image-text">Game1</div>
+        <img src="your-image.jpg" alt="Your Image" class="responsive-image">
+    </div>
+
+    <section class="content" style="grid-area: main;">
+        <div class="menu-container">
+            <button class="signin-button">Sign in</button>
+            <ul class="dropdown-menu">
+                <form action="розташування_обрабника.php" method="post">
+                    <label for="ім'я">Ім'я:</label>
+                    <input type="text" id="ім'я" name="ім'я" required>
+                    <br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+            
+                    <label for="пароль">Пароль:</label>
+                    <input type="password" id="пароль" name="пароль" required>
+                    <br>
+            
+                    <label for="підтвердження_пароля">Підтвердження пароля:</label>
+                    <input type="password" id="підтвердження_пароля" name="підтвердження_пароля" required>
+                    <br>
+            
+                    <input type="submit" value="Зареєструватися">
+                </form>
+    </section>
+    <section class="content">
+
+        <div class="menu-container">
+            <button class="menu-button">Меню</button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Спадне</a></li>
+              <li><a href="#">Меню</a></li>
+              <li><a href="#">Клас</a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="scroll-to-top">
+            &#9650;
+        </a>
+    </section>
+    <aside style="grid-area: aside;">
+        <article><h3>Навіть тут може бути реклама!</h3></article>
+    </aside>
+
+    <footer style="grid-area: footer;">
+        <article><p>Футер</p></article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-size-base: 16px;
+    font-family: 'Comfortaa', sans-serif;
+    --main-color: #2e1144;
+    --link-color: #007BFF;
+}
+.signin-button {
+  background-color: #6967fb; 
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    color: var(--main-color);
+}
+
+header {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: var(--main-color);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.search-box {
+    display: inline-block;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+.image-container {
+    width: 300;
+    height: auto;
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .image-container:hover .image-text {
+    display: none;
+  }
+  nav {
+    position: relative;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .menu-container:hover .dropdown-menu {
+    display: block;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  
+  .scroll-to-top a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scroll-to-top a:hover {
+    background-color: #0056b3;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "nav main aside"
+      "footer footer footer";
+    gap: 20px;
+  }
+  
+  header, nav, main, aside, footer {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+  }
+   
